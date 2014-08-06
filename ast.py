@@ -50,7 +50,3 @@ class Assignment(Statement):
 		self.expr = expr
 	def __repr__(self):
 		return '{0} = {1}'.format(self.ident, self.expr)
-
-class GoStmt(Statement):
-	def __init__(self, funcCall):
-		self.funcCall = funcCall
