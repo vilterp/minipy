@@ -5,10 +5,10 @@ from mpast import *
 
 BUILTINS = {
 	'print': print,
-    'or': op.or_,
-    'plus': op.add,
-    'minus': op.sub,
-    'eq': op.eq
+	'or': op.or_,
+	'plus': op.add,
+	'minus': op.sub,
+	'eq': op.eq
 }
 
 class CodeError(Exception):
