@@ -1,7 +1,7 @@
 from __future__ import print_function
 import operator as op
 
-from ast import *
+from mpast import *
 
 BUILTINS = {
 	'print': print,

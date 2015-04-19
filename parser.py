@@ -1,13 +1,12 @@
 import pyparsing as pp
 from pyparsing import *
-import ast
-from ast import *
+from mpast import *
 
 funcDef = Forward()
 
 fileOfCode = OneOrMore(funcDef).setParseAction(lambda toks: FileOfCode(toks))
 
-identifier = Word(alphas).setParseAction(lambda toks: ast.Ident(*toks)).setName('Ident')
+identifier = Word(alphas).setParseAction(lambda toks: Ident(*toks)).setName('Ident')
 
 integer = Word(nums).setParseAction(lambda toks: int(*toks))
 
